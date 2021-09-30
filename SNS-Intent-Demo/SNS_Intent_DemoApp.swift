@@ -11,7 +11,12 @@ import SwiftUI
 struct SNS_Intent_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                    .navigationTitle("Demo Chat")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
